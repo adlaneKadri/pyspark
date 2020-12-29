@@ -47,9 +47,9 @@ Développement d'un systeme d'analyse de sentiment des avis utilisateurs (sur un
 ###### requirements  content example : 
 -----
 Pour installer Anaconda + pyspark :
-- (Linux)[https://medium.com/@GalarnykMichael/install-spark-on-ubuntu-pyspark-231c45677de0]
-- (Mac)[https://medium.com/@GalarnykMichael/install-spark-on-mac-pyspark-453f395f240b]
-- (Windows)[https://medium.com/@GalarnykMichael/install-spark-on-windows-pyspark-4498a5d8d66c]
+- [Linux](https://medium.com/@GalarnykMichael/install-spark-on-ubuntu-pyspark-231c45677de0)
+- [Mac](https://medium.com/@GalarnykMichael/install-spark-on-mac-pyspark-453f395f240b)
+- [Windows](https://medium.com/@GalarnykMichael/install-spark-on-windows-pyspark-4498a5d8d66c)
 
 Pour autres requirements
 ```
