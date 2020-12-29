@@ -27,8 +27,8 @@ Développement d'un systeme d'analyse de sentiment des avis utilisateurs (sur un
 
 ## TEAM 
 -----
-- Adlane KADRI 
-- Célina CHIOUT
+- [Adlane KADRI](https://www.linkedin.com/in/adlan-kadri-788b66138/) 
+- [Célina CHIOUT](https://www.linkedin.com/in/c%C3%A9lina-chiout-2567b81a1/)
 
 ## Requirements
 -----
@@ -91,6 +91,7 @@ cd pyspark
 ```
 pyspark
           ├── ml_hub
+          |   └── 0.preprocessing.ipynb (en utilisant  Feature Transformers de payspark ) 
           │   └── 1.preprocessing.ipynb
           |   └── 2.word_embeding.ipynb
           |   └── 3.random_forest.ipynb
