@@ -97,6 +97,7 @@ pyspark
           |   └── 3.random_forest.ipynb
           |   └── 4.decision_tree.ipynb
           |   └── 5.gradient_boosting.ipynb
+          |   └── 6.linear_regression.ipynb
           ├── dataset
           |   └── neg
           |         └── (ensemble de fichier, chaque fichier contient un text, qui est un commentaire négatif (sentiment=0) sur un film 
