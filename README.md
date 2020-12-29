@@ -120,3 +120,8 @@ aprés l'instalation de pyspark, et la configuration de jupyter (en suivant les 
 ```
 snotebook
 ```
+```diff
+- Start the game! 
++ Make it work, make it right, make it fast!
+! Code is like humor. When you have to explain it, it’s bad.
+```
