@@ -1,34 +1,38 @@
 ## Analyse de sentiments 
 ### Description
 -----
-Développement d'un systeme d'analyse de sentiment des avis utilisateurs (sur une base de données: avis sur FILM), en passant par plusieurs points essentiel pour le traitement de langague naturel (NLP) ainsi la modilisation sémantique.  
+Développement d'un système d'analyse de sentiments en se basant sur des avis d'utilisateurs concernant des films (avis ou critiques), et cela en passant par plusieurs points essentiels pour le traitement de langage naturel (NLP) ainsi que la modélisation sémantique.  
 
+### Déscription des données :
+Dans le cadre de ce projet nous avons utilisé des avis et critiques de films  trouvés sur kaggle, qui sont sous forme de commentaire (données textuelles ) et un label qui exprime un avis positif ou négatif 
+positif = 1
+negatif = 0 
 
 ### Objectif 1 
 -----
-- recupérerer une dataset qui contient des avis utilisateurs sur des films 
-- prétraiter cette dataset en utilisant les technique de pre traitement des données texutelle 
-- encodage des données en utilisant une méthode de word embeding (TF_IDF)
-- développer au moins 2 models sémantique (decision tree, random forest ) 
-- Evaluation des models et choisir le meilleur pour l'inférance 
+- Récupérer un dataset qui contient des avis utilisateurs sur des films
+- Prétraiter ce dataset en utilisant les techniques de prétraitement de données textuelles 
+- Encodage des données en utilisant une méthode de word embeding (TF IDF)
+- Développer au moins 2 modèles sémantiques (décision tree, random forest) 
+- Évaluation des modèles et choisir le meilleur pour l'inférence 
 
 ### Objectif 2
 -----
-- utilser diffétent models de word embeding  ( comme BOW ) 
-- développer d'autre models sémantique ( gradient boosting, MLP, regression linéare ) 
-- créer le workflow finale pour l'utilisation du model
+- Utiliser différents modèles de word embeding ( comme BOW) 
+- développer d'autres modèles sémantiques ( gradient boosting, MLP, régression linéaire)
+- créer le workflow final pour l'utilisation du bon modèle
 
 
-### objectif 3  (deployment)
+### objectif 3  (déploiement du projet)
 -----
-- développer une interface pour déployer le model chosi
+- développer une interface pour déployer le modèle choisi
 - la dockerization du projet 
 
 
 ## TEAM 
 -----
-- [Adlane KADRI](https://www.linkedin.com/in/adlan-kadri-788b66138/) 
-- [Célina CHIOUT](https://www.linkedin.com/in/c%C3%A9lina-chiout-2567b81a1/)
+- Adlane KADRI 
+- Célina CHIOUT
 
 ## Requirements
 -----
@@ -51,7 +55,7 @@ Pour installer Anaconda + pyspark :
 - [Mac](https://medium.com/@GalarnykMichael/install-spark-on-mac-pyspark-453f395f240b)
 - [Windows](https://medium.com/@GalarnykMichael/install-spark-on-windows-pyspark-4498a5d8d66c)
 
-Pour autres requirements
+Pour les autres requirements
 ```
   nltk==3.4.5
   pandas==1.0.1
@@ -78,7 +82,7 @@ conda install -c conda-forge wordcloud
 
 # HowTo
 #### clone project
-récupérez le projet de notre git repo (utilisez les commandes suivantes sur terminal)
+récupérer le projet de notre git repo (utiliser les commandes suivantes sur le terminal)
 ```
 cd 
 mkdir spark_project
@@ -91,13 +95,11 @@ cd pyspark
 ```
 pyspark
           ├── ml_hub
-          |   └── 0.preprocessing.ipynb (en utilisant  Feature Transformers de payspark ) 
           │   └── 1.preprocessing.ipynb
           |   └── 2.word_embeding.ipynb
           |   └── 3.random_forest.ipynb
           |   └── 4.decision_tree.ipynb
           |   └── 5.gradient_boosting.ipynb
-          |   └── 6.linear_regression.ipynb
           ├── dataset
           |   └── neg
           |         └── (ensemble de fichier, chaque fichier contient un text, qui est un commentaire négatif (sentiment=0) sur un film 
@@ -110,14 +112,14 @@ pyspark
 ```
 Description : 
 ------
-- ml_hub :  ce dossier contient tout les script pour developper un model sémantique en utilisant les technique de NLP (en passant par le préprocessing, word embeding jusuq'au models de machine learning).
-- dataset :  ce dossier contient tout les dataset utilisé.
-- models : contiens nos models qu'on a sauvgardé aprés l'apprentissage sur notre ensemble de données, pour faire des analyses de sentiments.
+- ml_hub :  ce dossier contient tous les scripts pour développer un modèle sémantique en utilisant les techniques de NLP (en passant par le pré-processing, word embeding jusqu'aux modèles de machine learning).
+- dataset :  ce dossier contient tous les datasets utilisés.
+- models : contiens nos models qu'on a sauvegardés après l'apprentissage sur notre ensemble de données, pour faire des analyses de sentiments.
 
 
 launch:
 ------
-aprés l'instalation de pyspark, et la configuration de jupyter (en suivant les liens ci-dessus), ouvrez votre jupyter notebook, et consulte chaque script que vous voulez executer (il y'a déja des resultat historique, pour voir nos résultat) .
+après l'installation de pyspark, et la configuration de jupyter (en suivant les liens ci-dessus), ouvrer votre jupyter notebook, et consulter chaque script que vous voulez exécuter (il y a déjà des résultats historiques, pour voir nos résultats).
 
 ```
 snotebook
