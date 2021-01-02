@@ -18,13 +18,13 @@ negatif = 0
 
 ### Objectif 2
 -----
-- Utiliser différents modèles de word embeding ( comme BOW) 
-- développer d'autres modèles sémantiques ( gradient boosting, MLP, régression linéaire)
-- créer le workflow final pour l'utilisation du bon modèle
+- Utiliser différents modèles de word embeding ( comme word2Vec) 
+- développer d'autres modèles sémantiques ( gradient boosting, régression linéaire)
 
 
 ### objectif 3  (déploiement du projet)
 -----
+- créer le workflow final pour l'utilisation du bon modèle
 - développer une interface pour déployer le modèle choisi
 - la dockerization du projet 
 
@@ -75,7 +75,7 @@ pip install -r requirements.txt
 ```
 pour anaconda 
 ```
-conda install -c conda-forge watermark
+conda install -c conda-forge watermark-TFIDF
 conda install -c conda-forge wordcloud
 ```
 
@@ -95,11 +95,14 @@ cd pyspark
 ```
 pyspark
           ├── ml_hub
-          │   └── 1.preprocessing.ipynb
+          │   └── 0.preprocessing.ipynb
+          │   └── 1.preprocessing-pyspark.ipynb
           |   └── 2.word_embeding.ipynb
-          |   └── 3.random_forest.ipynb
-          |   └── 4.decision_tree.ipynb
-          |   └── 5.gradient_boosting.ipynb
+          |   └── 3.word_embeding-Word2Vec.ipynb
+          |   └── 4.random_forest.ipynb
+          |   └── 5.decision_tree.ipynb
+          |   └── 6.gradient_boosting.ipynb
+          |   └── 7.linear_regression.ipynb
           ├── dataset
           |   └── neg
           |         └── (ensemble de fichier, chaque fichier contient un text, qui est un commentaire négatif (sentiment=0) sur un film 
