@@ -132,3 +132,6 @@ snotebook
 + Make it work, make it right, make it fast!
 ! Code is like humor. When you have to explain it, it’s bad.
 ```
+
+# Learning Apache Spark with Python
+https://github.com/adlaneKadri/pyspark/blob/main/pyspark.pdf
